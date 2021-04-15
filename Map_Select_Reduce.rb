@@ -93,11 +93,27 @@
 # Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
 # Output: ["a", "man", "a", "a"]
 
+# input = ["a", "man", "a", "plan", "a", "canal", "panama"]
+
+# def less_than4(array)
+#   return array.select { |word| word.length < 4 }
+# end
+
+# p less_than4(input)
+
 # #8
 # Write a function that accepts an array of numbers and returns an array with only the numbers less than 10.
 # Example:
 # Input: [8, 23, 0, 44, 1980, 3]
 # Output: [8, 0, 3]
+
+# input = [8, 23, 0, 44, 1980, 3]
+
+# def lest_than10(array)
+#   return array.select { |n| n < 10 }
+# end
+
+# p lest_than10(input)
 
 # #9
 # Write a function that accepts an array of strings and returns an array with only the strings that don't start with the letter "b".
@@ -105,6 +121,15 @@
 # Input: ["big", "little", "good", "bad"]
 # Output: ["little", "good"]
 
+# input = ["big", "little", "good", "bad"]
+
+# def i_hate_b(array)
+#   # to check for array use is_a? and to check for string use is_s?
+
+#   return array.reduce(Array.new) { |a, s| s[0].downcase == "b" ? a : a << s }
+# end
+
+# p i_hate_b(input)
 # #10
 # Write a function that accepts an array of numbers and returns an array with only the odd numbers.
 # Example:
