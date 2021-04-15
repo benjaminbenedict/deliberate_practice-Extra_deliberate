@@ -136,6 +136,14 @@
 # Input: [2, 4, 5, 1, 8, 9, 7]
 # Output: [5, 1, 9, 7]
 
+# input = [2, 4, 5, 1, 8, 9, 7]
+
+# def i_like_them_odds(array)
+#   return array.select { |n| n.odd? }
+# end
+
+# p i_like_them_odds(input)
+
 # #11
 # Write a function that accepts an array of numbers and returns the sum of all the numbers.
 # Example:
@@ -154,14 +162,38 @@
 # Input: ["volleyball", "basketball", "badminton"]
 # Output: 29
 
+# input = ["volleyball", "basketball", "badminton"]
+
+# def total_string_count(array)
+#   return array.inject(0) { |count, string| count += string.length }
+# end
+
+# p total_string_count(input)
+
 # #14
 # Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
 # Example:
 # Input: ["volleyball", "basketball", "badminton"]
 # Output: "volleyball-basketball-badminton"
 
+# input = ["volleyball", "basketball", "badminton"]
+
+# def dashes_are_so_hot_right_now(array)
+#   return array.inject() { |combo, string| combo + "-" + string }
+# end
+
+# p dashes_are_so_hot_right_now(input)
+
 # #15
 # Write a function that accepts an array of numbers and returns the greatest number.
 # Example:
 # Input: [5, 10, 8, 3]
 # Output: 10
+
+input = [5, 10, 8, 3]
+
+def there_can_only_be_one(array)
+  return array.reduce() { |greatest, number| number > greatest ? greatest = number : greatest }
+end
+
+p there_can_only_be_one(input)
