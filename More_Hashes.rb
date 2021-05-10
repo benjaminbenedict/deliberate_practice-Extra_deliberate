@@ -105,16 +105,24 @@ books = [
 #   'Green Eggs and Ham by Dr. Seuss',
 #   'The Adventures of Huckleberry Finn by Mark Twain'
 # ]
-def reformater(hash_table)
-  hash_table.inject(Array.new) { |array, hash| array << "#{hash[:title]} by #{hash[:author]}" }
-end
+# def reformater(hash_table)
+#   hash_table.inject(Array.new) { |array, hash| array << "#{hash[:title]} by #{hash[:author]}" }
+# end
 
-p reformater(books)
+# p reformater(books)
 # #7
 # Here's an array of strings, with each string representing a vote for a particular political candidate.
 # ["Gutierrez", "Johnson", "Johnson", "Johnson", "Gutierrez", "Johnson, "Gutierrez"]
 # Write a function that returns a hash table containing the tally of votes for each candidate.
 # Expected Output: {"Gutierrez": 3, "Johnson": 4}
+# votes = ["Gutierrez", "Johnson", "Johnson", "Johnson", "Gutierrez", "Johnson", "Gutierrez"]
+
+# def vote_counter(array)
+#   array.each_with_object(Hash.new(0)) { |candidate, hash| hash[candidate] ? hash[candidate] += 1 : hash[candidate] = 1 }
+# end
+
+# p vote_counter(votes)
+
 # #8
 # Extend the previous function to return the winner of the election (that is, the candidate with the most votes).
 # Expected Output: "Johnson"
